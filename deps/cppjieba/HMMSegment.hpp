@@ -103,7 +103,7 @@ class HMMSegment: public SegmentBase {
     }
     while (begin != end) {
       x = begin->rune;
-      if ( ('0' <= x && x <= '9') || x == '.') {
+      if ( ('0' <= x && x <= '9') ) {
         begin++;
       } else {
         break;
